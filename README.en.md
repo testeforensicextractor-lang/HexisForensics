@@ -61,8 +61,15 @@ documents that stand on their own.
 
 1. Download the installer on the [download page](https://github.com/HexisForensics/HexisForensics/releases/latest).
 2. **Verify the hash.** In the file's folder, open the Terminal and type
-   `Get-FileHash .\HexisForensics-Setup-1.0.0.exe`. The value must be identical to the
-   one published on the download page.
+   `Get-FileHash .\HexisForensics-Setup-1.0.0.exe`. For **version 1.0.0**, the
+   result must be identical to:
+
+   ```
+   de4abda974d2a0267df98ba461fefb4e4eadd8f0cf52950c9c2ce7ba5723c5bf
+   ```
+
+   If a single character differs, **do not run** the file. The same value is in
+   the `.sha256` next to the installer on the releases page.
 3. Run the installer. As it has no paid digital signature, Windows shows
    **"Windows protected your PC"**: click **More info** and then **Run anyway**.
 4. On the first run, register your examiner profile and save the password

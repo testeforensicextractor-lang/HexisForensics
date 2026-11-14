@@ -61,8 +61,15 @@ obtuvo cada dato y entregar documentos que se sostienen por sí solos.
 
 1. Descargue el instalador en la [página de descarga](https://github.com/HexisForensics/HexisForensics/releases/latest).
 2. **Verifique el hash.** En la carpeta del archivo, abra la Terminal y escriba
-   `Get-FileHash .\HexisForensics-Setup-1.0.0.exe`. El valor debe ser idéntico al
-   publicado en la página de descarga.
+   `Get-FileHash .\HexisForensics-Setup-1.0.0.exe`. Para la **versión 1.0.0**, el
+   resultado debe ser idéntico a:
+
+   ```
+   de4abda974d2a0267df98ba461fefb4e4eadd8f0cf52950c9c2ce7ba5723c5bf
+   ```
+
+   Si difiere un solo carácter, **no ejecute** el archivo. El mismo valor está en
+   el `.sha256` junto al instalador en la página de versiones.
 3. Ejecute el instalador. Como no tiene firma digital pagada, Windows muestra
    **«Windows protegió su PC»**: haga clic en **Más información** y en
    **Ejecutar de todas formas**.

@@ -166,6 +166,14 @@
              <code>Get-FileHash</code>.</p></div>
           <div class="step"><span class="n"></span><p>Ejecute y registre su perfil de examinador.</p></div>
         </div>
+        <div style="margin-top:16px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#f3f8fc">
+          <b style="color:var(--navy);font-size:.95rem">🔒 Verificar la integridad</b>
+          <p style="margin:8px 0 6px;color:#44576a;font-size:.92rem">En PowerShell, dentro de la carpeta del archivo descargado:</p>
+          <code style="display:block;padding:8px 10px;word-break:break-all">Get-FileHash .\HexisForensics-Setup-1.0.0.exe</code>
+          <p style="margin:10px 0 6px;color:#44576a;font-size:.92rem">El resultado debe ser <b>idéntico</b> a este (v1.0.0):</p>
+          <code style="display:block;padding:8px 10px;word-break:break-all">de4abda974d2a0267df98ba461fefb4e4eadd8f0cf52950c9c2ce7ba5723c5bf</code>
+          <p style="margin:10px 0 0;color:#44576a;font-size:.92rem">Si difiere un solo carácter, <b>no ejecute</b> el archivo. El mismo valor está en el <code>.sha256</code> junto al instalador.</p>
+        </div>
       </div>
       <div class="card">
         <h3>Documentación</h3>
